@@ -1,5 +1,5 @@
 import express from 'express'
 const app = express()
 
-app.get('/ping', ()=>console.log('server working'))
+app.get('/ping', (request, response)=>response.send('server is working'))
 export default app;
